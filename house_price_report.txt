@@ -1,0 +1,56 @@
+======================================================================
+HOUSE PRICE PREDICTION MODEL - DETAILED REPORT
+Algorithm: Multiple Linear Regression
+======================================================================
+
+DATASET INFORMATION:
+Training samples: 424
+Test samples: 106
+Total features (after encoding): 13
+
+ORIGINAL FEATURES:
+Numeric: ['area', 'bedrooms', 'bathrooms', 'stories', 'parking']
+Categorical: ['mainroad', 'guestroom', 'basement', 'hotwaterheating', 'airconditioning', 'prefarea', 'furnishingstatus']
+
+ENCODED FEATURES (Total: 13):
+  area
+  bedrooms
+  bathrooms
+  stories
+  parking
+  mainroad_yes
+  guestroom_yes
+  basement_yes
+  hotwaterheating_yes
+  airconditioning_yes
+  prefarea_yes
+  furnishingstatus_semi-furnished
+  furnishingstatus_unfurnished
+
+PERFORMANCE METRICS:
+Metric                         Value               
+--------------------------------------------------
+train_rmse                     887279.4773         
+test_rmse                      1071542.5912        
+train_mae                      671425.8751         
+test_mae                       784877.2641         
+train_r2                       0.6588              
+test_r2                        0.6684              
+train_mape                     0.1555              
+test_mape                      0.1934              
+cv_mean                        0.6183              
+cv_std                         0.0936              
+
+TOP 10 COEFFICIENTS:
+Feature                                  Coefficient         
+------------------------------------------------------------
+area                                     420372.884377       
+bathrooms                                360259.321368       
+stories                                  352750.029750       
+airconditioning_yes                      348044.161411       
+prefarea_yes                             240162.232620       
+hotwaterheating_yes                      177321.723786       
+furnishingstatus_unfurnished             -153069.202438      
+basement_yes                             148241.335830       
+mainroad_yes                             142614.183920       
+guestroom_yes                            141736.208748       

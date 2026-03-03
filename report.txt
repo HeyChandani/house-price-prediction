@@ -1,0 +1,9 @@
+======================================================================
+HOUSE PRICE PREDICTION MODEL - REPORT
+Algorithm: Multiple Linear Regression
+======================================================================
+
+ORIGINAL FEATURES:
+Numeric: []
+Categorical: []
+
